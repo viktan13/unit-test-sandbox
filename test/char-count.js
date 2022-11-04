@@ -9,7 +9,7 @@ const {expect} = require('chai');
 //   функция charCount('reliable', 'l') должна возвратить 2;
 //   функция charCount('hero', 'a') должна возвратить 0;
 
-function char_count(str, letter) {
+function charCount(str, letter) {
     let letter_Count = 0;
     for (let position = 0; position < str.length; position++) {
         if (str.charAt(position) == letter) {
@@ -20,43 +20,43 @@ function char_count(str, letter) {
 }
 
 
-it('The function "char_count" is created ', function () {
-    expect(char_count).to.be.a('function');
+it('The function "charCount" is created ', function () {
+    expect(charCount).to.be.a('function');
 });
 
 it('The function returns the correct result for arguments  (\'abracadabra\', \'a\')', function () {
-    expect(char_count('abracadabra', 'a')).eq(5);
+    expect(charCount('abracadabra', 'a')).eq(5);
 });
 
 it('The function returns the correct result for arguments  (\'reliable\', \'l\')', function () {
-    expect(char_count('reliable', 'l')).eq(2);
+    expect(charCount('reliable', 'l')).eq(2);
 });
 
 it('The function returns the correct result for arguments  (\'reference\', \'e\')', function () {
-    expect(char_count('reference', 'e')).eq(4);
+    expect(charCount('reference', 'e')).eq(4);
 });
 
 it('The function returns the correct result for arguments  (\'restaurant\', \'r\')', function () {
-    expect(char_count('restaurant', 'r')).eq(2);
+    expect(charCount('restaurant', 'r')).eq(2);
 });
 
 it('The function returns the correct result for arguments  (\'record was made unexpectedly\', \'e\')', function () {
-    expect(char_count('record was made unexpectedly', 'e')).eq(5);
+    expect(charCount('record was made unexpectedly', 'e')).eq(5);
 });
 
 it('The function returns the correct result for arguments  (\'we will get it done\', \'d\')', function () {
-    expect(char_count('we will get it done', 'd')).eq(1);
+    expect(charCount('we will get it done', 'd')).eq(1);
 });
 
 it('The function returns the correct result for arguments  (\'hero\', \'a\')', function () {
-    expect(char_count('hero', 'a')).eq(0);
+    expect(charCount('hero', 'a')).eq(0);
 });
 
 it('The function returns the correct result for arguments  (\'tradition\', \'q\')', function () {
-    expect(char_count('tradition', 'q')).eq(0);
+    expect(charCount('tradition', 'q')).eq(0);
 });
 
 it('The function returns the correct result for arguments  (\'t\', \'t\')', function () {
-    expect(char_count('t', 't')).eq(1);
+    expect(charCount('t', 't')).eq(1);
 });
 
