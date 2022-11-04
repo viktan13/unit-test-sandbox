@@ -15,10 +15,10 @@ function amountCoins(amount, coins) {
     } else {
         if (amount >= coins[0]) {
             let left = (amount - coins[0]);
-            return [coins[0]].concat(amount_coins(left, coins));
+            return [coins[0]].concat(amountCoins(left, coins));
         } else {
             coins.shift();
-            return amount_coins(amount, coins);
+            return amountCoins(amount, coins);
         }
     }
 }
